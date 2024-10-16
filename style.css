@@ -1,5 +1,21 @@
 .container p {
     display: inline;
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    /* flex-shrink: 0; */
+}
+
+#item-1 {
+    flex-grow: 1;
+    background-color: brown;
+    /* flex-basis: 0; */
+}
+
+#item-2 {
+    flex-grow: 2;
+    background-color: chocolate;
+    /* flex-basis: 0; */
 }
 
 body {
@@ -7,10 +23,14 @@ body {
 }
 
 .container {
+    height: 500px;
     display: flex;
-    gap: 25px;
-    flex-direction: column;
+    /* gap: 25px; */
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    /* column-gap: 0px; */
-    
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    align-content: flex-start;
+
 }
